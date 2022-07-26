@@ -37,3 +37,8 @@
   height: 30px;
   width: 30px;
 }
+.button {
+  background-color: transparent;
+  border: none;
+}
+
