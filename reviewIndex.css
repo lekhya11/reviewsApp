@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 .heading {
   color: #ffffff;
@@ -17,28 +18,39 @@
 .profile-block {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  width: 50%;
 }
 .name-heading {
   color: #ffffff;
   font-family: 'Roboto';
+  text-align: center;
+}
+.align-center {
+  text-align: center;
 }
 .company-name {
   color: #171f46;
   font-family: 'Roboto';
+  text-align: center;
 }
 .review-description {
   color: #171f46;
   font-family: 'Roboto';
+  text-align: center;
 }
 .profile-image {
   border-radius: 75px;
+  height: 80px;
+  width: 80px;
+  text-align: center;
 }
 .arrow-image {
   height: 30px;
   width: 30px;
 }
+
 .button {
   background-color: transparent;
   border: none;
 }
-
