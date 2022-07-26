@@ -1,4 +1,5 @@
 import {Component} from 'react'
+
 import './index.css'
 
 class ReviewsCarousel extends Component {
@@ -7,7 +8,6 @@ class ReviewsCarousel extends Component {
   }
 
   onClickLeftArrow = () => {
-    const {reviewsList} = this.props
     const activeIndex = this.state
     if (activeIndex > 0) {
       this.setState(prevState => ({
@@ -36,7 +36,7 @@ class ReviewsCarousel extends Component {
       <div className="app-container">
         <h1 className="heading">Reviews</h1>
         <div className="profile-container">
-          <button>
+          <button type="button" className="button">
             <img
               src="https://assets.ccbp.in/frontend/react-js/left-arrow-img.png "
               alt="left arrow"
@@ -50,7 +50,7 @@ class ReviewsCarousel extends Component {
             <p className="company-name">{companyName}</p>
             <p className="review-description">{description}</p>
           </div>
-          <button>
+          <button type="button" className="button">
             <img
               src="https://assets.ccbp.in/frontend/react-js/right-arrow-img.png "
               alt="right arrow"
@@ -65,3 +65,4 @@ class ReviewsCarousel extends Component {
 }
 
 export default ReviewsCarousel
+
